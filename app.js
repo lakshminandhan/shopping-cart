@@ -40,7 +40,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 db.connect(function (error) {
-  if(err){
+  if(error){
     console.log('unable to connect database');
     process.exit(1);
   } else{
